@@ -1,0 +1,151 @@
+/* General Page Styling */
+.recipe-page {
+    padding-top: 12vh;
+    min-height: 60vh;
+}
+
+/* Recipe Image Styling */
+.recipe-img {
+    width: 100%;
+    padding-top: 2vh;
+}
+
+.recipe-img img {
+    width: 98%;
+    margin-left: 1%;
+    height: 85vh;
+    border-radius: 0.7rem;
+}
+
+/* Recipe Data Layout */
+.recipe-data-container {
+    display: grid;
+    grid-template-columns: 65% 25%;
+    justify-content: space-evenly;
+}
+
+/* Recipe Data Styling */
+.recipe-data {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    position: relative;
+    top: -15vh;
+    background-color: #e015d6;
+    padding: 4vh 2vw;
+    border-radius: 0.6rem;
+}
+
+/* Recipe Header Styling */
+.recipe-header h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.recipe-header .recipe-specials {
+    display: flex;
+    gap: 10px;
+}
+
+.recipe-header .recipe-specials p {
+    border: 1px solid rgb(235, 202, 15);
+    color: rgb(193, 238, 29);
+    padding: 5px 20px;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+}
+
+/* Procedure Section */
+.recipe-data .procedure h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 3vh;
+}
+
+.recipe-data .procedure p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* YouTube Video Section */
+.youtube-video-container h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 3vh;
+}
+
+/* Ingredients Section Styling */
+.ingredients-container {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    position: relative;
+    top: -15vh;
+    background-color: #ee0d0d;
+    padding: 4vh 2vw;
+    border-radius: 0.6rem;
+    height: fit-content;
+}
+
+.ingredients-container h3 {
+    margin: 0;
+    padding-bottom: 1vh;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(228, 110, 14);
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ingredient h5 {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    max-width: 50%;
+}
+
+.ingredient p {
+    margin: 0;
+    font-size: 0.8rem;
+    max-width: 40%;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .recipe-data-container {
+        grid-template-columns: 1fr;
+        padding: 1vw;
+    }
+
+    .recipe-header h4 {
+        font-size: 1.3rem;
+    }
+
+    .recipe-header .recipe-specials p {
+        font-size: 0.6rem;
+        padding: 3px 15px;
+    }
+
+    .recipe-img img {
+        height: 60vh;
+    }
+
+    .ingredient h5, .ingredient p {
+        font-size: 0.9rem;
+    }
+
+    .ingredients-container {
+        top: -10vh;
+        padding: 3vh 1.5vw;
+    }
+}

@@ -1,0 +1,142 @@
+.category-page {
+    padding-top: 14vh;
+    padding-bottom: 8vh;
+    min-height: 50vh;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.3s; /* Added delay to stagger animation */
+}
+
+.categorypage-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 0.8s; /* Added delay for smoother flow */
+}
+
+.categorypage-head h2 {
+    padding-left: 2vw;
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1.3s; /* Slight delay after slide-in for h2 */
+}
+
+.categorypage-head-options {
+    padding-right: 3vw;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1.5s; /* Added delay to fade-in options */
+}
+
+.categorypage-head-options p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.categorypage-head-options span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.categorypage-head-options span button {
+    width: 70px;
+    font-size: 0.7rem;
+    height: 6vh;
+    border: 1.5px solid #000;
+    border-radius: 0.3rem;
+    color: #000;
+    font-weight: 600;
+    background-color: rgba(240, 248, 255, 0);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1.8s; /* Adjust delay for button */
+}
+
+.categorypage-head-options span button:hover {
+    background-color: #000;
+    color: rgb(13, 61, 102);
+    transform: scale(1.05);
+}
+
+
+
+.food-items {
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    justify-content: space-between;
+    row-gap: 5vh;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 2s; /* Delay to stagger food items' fade-in */
+}
+
+.food-items .food-item {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    padding: 10px;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInItem 1s ease-out forwards;
+    animation-delay: 2.3s; /* Adjust delay for each food item */
+}
+
+.food-items .food-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transform: translateY(-8px);
+}
+
+.food-items .food-item img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.food-items .food-item h4 {
+    margin: 0;
+    font-weight: 400;
+    color: rgb(65, 134, 111);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInItem {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
